@@ -33,3 +33,15 @@ export const HalfInputSld = styled.div`
 export const FullInputSld = styled.div`
     width: 98%;
 `
+
+export const SuccessMessageSld = styled.p`
+    margin: 10px;
+    margin-bottom: 30px;
+    color: #0a5c0a;
+`
+
+export const ValidateMessageSld = styled.p`
+    margin: 10px;
+    margin-bottom: 30px;
+    color: #b81414;
+`

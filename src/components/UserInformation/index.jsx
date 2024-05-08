@@ -33,6 +33,20 @@ const UserInformation = ({user, setUser}) => {
         return age
     }
 
+    function formatDate(dateString) {
+        let birthDate = new Date(dateString)
+        let day = birthDate.getDate()
+        let month = birthDate.getMonth() + 1 
+        let year = birthDate.getFullYear()
+        if (day < 10) {
+            day = '0' + day
+        }
+        if (month < 10) {
+            month = '0' + month
+        }
+        return day + "/" + month + "/" + year
+    }
+
     return (
         <SectionSld>
             {loading ? 
@@ -44,7 +58,7 @@ const UserInformation = ({user, setUser}) => {
                 </LeftSideSld>
                 <RightSideSld>
                     <TitleSld>{user ? user.name : "Gustavo Kenji Ando"}</TitleSld>
-                    <TextSld>Idade: {user ? getAge(user.birthday) : "20 anos"}</TextSld>
+                    <TextSld>Idade: {user ? `${getAge(user.birthday)} (${formatDate(user.birthday)})` : "20 anos (02/08/2003)"}</TextSld>
                     <TextSld>Estado: {user ? user.state : "São Paulo"}</TextSld>
                     <TextSld>Cidade: {user ? user.city: "São José dos Campos"}</TextSld>
                     <TextSld>Bairro: {user ? user.district: "Jardim Oriente"} </TextSld>
