@@ -21,7 +21,13 @@ export const CenterSld = styled.div`
 export const HalfInputSld = styled.div`
     display: inline-block;
     width: 48.5%;
-    margin-right: 10px
+    margin-right: 10px;
+
+    @media (max-width: 765px) {
+        display: block;
+        width: 98%;
+        margin-right: 0px;
+    }
 `
 
 export const FullInputSld = styled.div`
