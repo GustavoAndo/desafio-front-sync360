@@ -6,10 +6,10 @@ import Loading from '../Loading'
 import { useState } from 'react'
 import api from '../../services/api'
 
-const Form = () => {
+const Form = ({user, setUser}) => {
 
     const [name, setName] = useState('')
-    const [birthday, setBirthday] = useState()
+    const [birthday, setBirthday] = useState('')
     const [state, setState] = useState('')
     const [city, setCity] = useState('')
     const [district, setDistrict] = useState('')
@@ -29,6 +29,22 @@ const Form = () => {
                     console.error(error);
                 })
                 .finally(function () {
+                    const newUser = { ...user }
+                    if (name) { newUser.name = name }
+                    if (birthday) { newUser.birthday = birthday }
+                    if (state) { newUser.state = state }
+                    if (city) { newUser.city = city }
+                    if (district) { newUser.district = district }
+                    if (street) { newUser.street = street }
+                    if (biography) { newUser.biography = biography }
+                    setName('')
+                    setBirthday('')
+                    setState('')
+                    setCity('')
+                    setDistrict('')
+                    setStreet('')
+                    setBiography('')
+                    setUser(newUser)
                     setLoading(false)
                 });
     }    

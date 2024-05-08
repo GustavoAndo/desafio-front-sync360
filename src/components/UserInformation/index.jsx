@@ -1,11 +1,10 @@
 import { SectionSld, TitleSld, TextSld, ImgSld, RightSideSld, LeftSideSld } from './styles'
 import avatar from '../../assets/avatar.jpg'
 import api from '../../services/api';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Loading from '../Loading';
 
-const UserInformation = () => {
-    const [user, setUser] = useState()
+const UserInformation = ({user, setUser}) => {
     const [loading, setLoading] = useState(true)
     
     useEffect(() => {
