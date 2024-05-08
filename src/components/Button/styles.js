@@ -8,4 +8,8 @@ export const ButtonSld = styled.button`
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
+
+    &:hover {
+        background-color: #222;
+    }
 `

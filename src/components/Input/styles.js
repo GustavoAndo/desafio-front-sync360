@@ -8,6 +8,14 @@ export const InputSld = styled.input`
     border: 1px solid #ccc;
     box-sizing: border-box;
     font-size: 15px;
+
+    &:hover {
+        background-color: #ddd;
+    }
+    &:focus {
+        border: 2px solid #000;
+        background-color: #ddd;
+    } 
 `
 
 export const LabelSld = styled.label`

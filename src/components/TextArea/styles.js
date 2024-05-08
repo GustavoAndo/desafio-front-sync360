@@ -8,6 +8,15 @@ export const TextAreaSld = styled.textarea`
     border: 1px solid #ccc;
     box-sizing: border-box;
     font-size: 15px;    
+
+    &:hover {
+        background-color: #ddd;
+    }
+    &:focus {
+        border: 1px solid #000;
+        background-color: #ddd;
+    }
+
 `
 
 export const LabelSld = styled.label`
