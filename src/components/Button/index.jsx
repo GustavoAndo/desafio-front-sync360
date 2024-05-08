@@ -1,7 +1,7 @@
 import { ButtonSld } from './styles'
 
-const Button = ({text}) => {
-    return <ButtonSld>{text}</ButtonSld>
+const Button = ({text, click}) => {
+    return <ButtonSld onClick={click}>{text}</ButtonSld>
 }
 
 export default Button;

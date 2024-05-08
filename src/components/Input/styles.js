@@ -10,11 +10,11 @@ export const InputSld = styled.input`
     font-size: 15px;
 
     &:hover {
-        background-color: #ddd;
+        background-color: #eee;
     }
     &:focus {
         border: 2px solid #000;
-        background-color: #ddd;
+        background-color: #eee;
     } 
 `
 
