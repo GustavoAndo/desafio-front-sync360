@@ -10,6 +10,4 @@ export const HeaderSld = styled.h1`
     @media (max-width: 425px) {
         font-size: 15px;
     }
-
-
 `

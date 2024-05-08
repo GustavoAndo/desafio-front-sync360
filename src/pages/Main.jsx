@@ -1,6 +1,7 @@
 import { ContainerSld } from './styles'
 import Header from '../components/Header'
 import UserInformation from '../components/UserInformation'
+import Form from '../components/Form'
 
 const Main = () => {
   return (
@@ -8,6 +9,7 @@ const Main = () => {
         <Header />
         <ContainerSld>
           <UserInformation />
+          <Form />
         </ContainerSld>
     </>
   )
