@@ -1,4 +1,4 @@
-# Persistência de Dados da Aplicação
+# # Desafio da empresa Sync360 - Front-end
 
 ### Repositório com o front-end da solução do desafio da empresa Sync360
 
