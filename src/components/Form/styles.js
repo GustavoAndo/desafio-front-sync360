@@ -38,10 +38,12 @@ export const SuccessMessageSld = styled.p`
     margin: 10px;
     margin-bottom: 30px;
     color: #0a5c0a;
+    text-align: center
 `
 
 export const ValidateMessageSld = styled.p`
     margin: 10px;
     margin-bottom: 30px;
     color: #b81414;
+    text-align: center;
 `

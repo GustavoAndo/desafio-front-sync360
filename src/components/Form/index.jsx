@@ -76,8 +76,6 @@ const Form = ({user, setUser}) => {
         <FormSld>
             <TitleSld>Atualizar Informações</TitleSld>
             <div>
-                <SuccessMessageSld>{successMessage}</SuccessMessageSld>
-                <ValidateMessageSld>{validateMessage}</ValidateMessageSld>
                 <HalfInputSld>
                     <Input label="Nome: " type="text" value={name} handle={setName} />
                 </HalfInputSld>
@@ -107,6 +105,8 @@ const Form = ({user, setUser}) => {
                     <Button text="Atualizar" click={updateUserInfo} />
                 }
             </CenterSld>
+            <SuccessMessageSld>{successMessage}</SuccessMessageSld>
+            <ValidateMessageSld>{validateMessage}</ValidateMessageSld>
         </FormSld>
     )
 }

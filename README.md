@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Persistência de Dados da Aplicação
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Repositório com o front-end da solução do desafio da empresa Sync360
 
-## Available Scripts
+---
+### Sobre este projeto
 
-In the project directory, you can run:
+Este é o front-end para o a solução que possui também um back-end ([Clique aqui para acessar o repositório](https://github.com/GustavoAndo/desafio-back-sync360)). Este projeto possui uma página que é divido em duas seções: Informações do Usuário, na qual é exibido as informações do usuários, que consiste em nome, idade (e data de nascimento), estado, cidade, bairro, rua e biografia, e Atualizar Informações, com um formulário que é possível atualizar os dados acima do próprio usuário. Este projeto funciona sozinho com as informações mocadas do usuário, porém a atualização dos dados do usuários não é persistida ao recarregar a página. Desse modo, caso o back-end esteja em funcionamento as informações do usuário com *id=1*, criado inicialmente de forma automatica pelo back-end,  é exibido, sendo possível atualizar as informações do banco de dados através do formulário de Atualizar Informações.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tecnologias:
+* JavaScript
+* React
+* Axios
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+### Execução: 
 
-### `npm test`
+Faça uma cópia do projeto:
+```console
+git clone https://github.com/GustavoAndo/desafio-front-sync360.git
+```
+Entre na raiz do projeto:
+```console
+cd desafio-front-sync360 
+```
+Execute os comandos
+```console
+npm install
+```
+```console
+npm start
+```
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Por Gustavo Kenji Ando
